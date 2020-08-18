@@ -15,7 +15,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand text-warning" href="#">Sava</a>
+    <a class="navbar-brand text-danger font-weight-bold" href="index.html">Sava</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,6 +43,9 @@
           </div>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="inquiry.html">Inquiry <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
         </li>
 
@@ -53,79 +56,80 @@
       </form>
       <div class="mx-2">
         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#loginModal" data->Login</button>
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signupModal" data->SignUp</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signupModal"
+          data->SignUp</button>
       </div>
     </div>
   </nav>
-  
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">UserName</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="recipient-password" class="col-form-label">Password</label>
-            <input type="text" class="form-control" id="recipient-password">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Login</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">FirstName</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="recipient-lastname" class="col-form-label">LastName</label>
-            <input type="text" class="form-control" id="recipient-lastname">
-          </div>
-          <div class="form-group">
-            <label for="recipient-password" class="col-form-label">Password</label>
-            <input type="password" class="form-control" id="recipient-password">
-          </div>
-          <div class="form-group">
-            <label for="recipient-mobiel" class="col-form-label">Mobile</label>
-            <input type="text" class="form-control" id="recipient-mobile">
-          </div>
-          <div class="form-group">
-            <label for="recipient-email" class="col-form-label">Email-Id</label>
-            <input type="text" class="form-control" id="recipient-email">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">UserName</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="recipient-password" class="col-form-label">Password</label>
+              <input type="text" class="form-control" id="recipient-password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">FirstName</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="recipient-lastname" class="col-form-label">LastName</label>
+              <input type="text" class="form-control" id="recipient-lastname">
+            </div>
+            <div class="form-group">
+              <label for="recipient-password" class="col-form-label">Password</label>
+              <input type="password" class="form-control" id="recipient-password">
+            </div>
+            <div class="form-group">
+              <label for="recipient-mobiel" class="col-form-label">Mobile</label>
+              <input type="text" class="form-control" id="recipient-mobile">
+            </div>
+            <div class="form-group">
+              <label for="recipient-email" class="col-form-label">Email-Id</label>
+              <input type="text" class="form-control" id="recipient-email">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -186,6 +190,9 @@
     </a>
   </div>
   <div class="container my-4">
+    <div class="card-header alert alert-primary font-weight-bold text-center">
+      <h2>WORKING TECHNOLOGIES</h2>
+    </div>
     <div class="row mb-2">
       <div class="col-md-6">
         <div
@@ -199,11 +206,12 @@
           </div>
           <div class="col-auto d-none d-lg-block">
             <!-- <img src="https://source.unsplash.com/200x250/?technology" /> -->
-            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" 
+            <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
               focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
               <rect width="100%" height="100%" fill="#55595c"></rect>
               <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img class="bd-placeholder-img" width="200" height="250" src="java.png" style="width: 256px;height: 256px;" />
+            <img class="bd-placeholder-img" width="200" height="250" src="java.png"
+              style="width: 256px;height: 256px;" />
           </div>
         </div>
       </div>
@@ -219,7 +227,8 @@
           </div>
           <div class="col-auto d-none d-lg-block">
             <!-- <img src="https://source.unsplash.com/200x250/?technology" /> -->
-            <img class="bd-placeholder-img" width="200" height="250" src="angularjs.png" style="width: 256px;height: 256px;" />
+            <img class="bd-placeholder-img" width="200" height="250" src="angularjs.png"
+              style="width: 256px;height: 256px;" />
           </div>
         </div>
       </div>
@@ -235,7 +244,8 @@
           </div>
           <div class="col-auto d-none d-lg-block">
             <!-- <img src="https://source.unsplash.com/200x250/?technology" /> -->
-            <img class="bd-placeholder-img" width="200" height="250" src="mongodb.png" style="width: 256px;height: 256px;" />
+            <img class="bd-placeholder-img" width="200" height="250" src="mongodb.png"
+              style="width: 256px;height: 256px;" />
           </div>
         </div>
       </div>
@@ -251,11 +261,56 @@
           </div>
           <div class="col-auto d-none d-lg-block">
             <!-- <img src="https://source.unsplash.com/200x250/?technology" /> -->
-            <img class="bd-placeholder-img" width="200" height="250" src="nodejs.png" style="width: 256px;height: 256px;" />
+            <img class="bd-placeholder-img" width="200" height="250" src="nodejs.png"
+              style="width: 256px;height: 256px;" />
           </div>
         </div>
       </div>
-      
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-header alert alert-primary font-weight-bold text-center">
+      <h2>TIME TO CELEBRATION</h2>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title text-warning font-weight-bold">SOME IMPORTANT FACTS</h1>
+      <h2 class="text-success font-weight-bold">10+ Technologies Working With</h2>
+      <h2 class="text-success font-weight-bold">5+ Countries Client</h2>
+    </div>
+  </div>
+  <div class="container" my-4>
+    <div class="card-header alert alert-primary font-weight-bold text-center">
+      <h2>MAIN HEAD OF THE SAVA TEAM</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="bill.jpg" />
+        <h2>Bill Gates</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+          vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+          magna.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="mark1.jpg" />
+        <h2>Mark Zukerberg</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
+          consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="mukesh1.jpg" />
+        <h2>Mukesh Ambani</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+          felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+          massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
     </div>
   </div>
   <footer class="container">
